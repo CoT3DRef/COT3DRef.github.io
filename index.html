@@ -1,7 +1,7 @@
 <html lang="en">
     <head>
         <!-- Change title from here -->
-        <title>HRS-Bench</title>
+        <title>CoT3DRef</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
@@ -17,17 +17,15 @@
                 </button>
 
                 <!-- Here is the first image and the link it goes to -->
-                <a class="nav-link active" href="#"><img src="./static/images/hrs_logo.png" width="100" /></a>
+                <!-- <a class="nav-link active" href="#"><img src="./static/images/hrs_logo.png" width="100" /></a> -->
                 <div class="collapse navbar-collapse" id="nav-content">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <!-- Here is the second image and the link it goes to -->
-                            <a class="nav-link active" href="#"><img src="./static/images/Bench_Logo.png" width="80" /></a>
+                            <!-- <a class="nav-link active" href="#"><img src="./static/images/Bench_Logo.png" width="80" /></a> -->
                         </li>
                         <!-- These are the items on the right -->
-                        <li class="nav-item"><a class="nav-link active" href="models.html">Models</a></li>
                         <li class="nav-item"><a class="nav-link active" href="quantitaive_results.html">Quantitaive Results</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="qualitative_results.html">Qualitative Results</a></li>
                     </ul>
                 </div>
 
@@ -40,19 +38,28 @@
                 <div class="col-sm-12" id="main">
                     <div class="row">
                         <div class="col-sm-12">
-                            <a href=""><img src="./static/images/Bench_Logo.png" class="mx-auto d-block" style="width: 500px;" /></a>
+                            <!-- <a href=""><img src="./static/images/Bench_Logo.png" class="mx-auto d-block" style="width: 500px;" /></a> -->
                         </div>
                         <div class="col-sm-12">
                             <div class="text-center">
-                                <a href="https://drive.google.com/drive/folders/1AlA259sXi-3ZJD7RFaL2bGDwJXLImJrx?usp=share_link" class="main-link btn btn-lg m-5 px-5">Data</a>
+                                <!-- <a href="https://drive.google.com/drive/folders/1AlA259sXi-3ZJD7RFaL2bGDwJXLImJrx?usp=share_link" class="main-link btn btn-lg m-5 px-5">Data</a> -->
                                 <a href="#" class="main-link btn btn-lg m-5 px-5">Paper</a>
-                                <a href="https://github.com/hrsbench/HRS_Bench" class="main-link btn btn-lg m-5 px-5">GitHub</a>
+                                <a href="https://github.com/CoT3DRef/COT3DRef" class="main-link btn btn-lg m-5 px-5">GitHub</a>
                             </div>
                         </div>
                         <div class="col-sm-2"></div>
                         <div class="col-sm-8">
-                            Holistic, Reliable and Scalable Benchmark for Text-to-Image Models:
-                            <ol>
+                            
+                            <h2>CoT3DRef: Chain-of-Thoughts Data-Efficient 3D Visual Grounding</h2>
+                            <div class="text-center"><img src="./static/images/CoT_teaser_figure-1.png" style="width: 700px;margin-bottom:50px;margin-top:10px;" /></div>
+                            <p>We aim to address the question of whether an interpretable 3D visual grounding framework, capable of emulating the human perception system, can be designed as shown in the figure above.</p>
+                            <h3>How Does CoT3DRef work?</h3>
+                                <div class="text-center"><img src="./static/images/CoT_arch-1.png" style="width: 700px;margin-bottom:50px;margin-top:10px;" /></div>
+
+                                <p>To achieve this objective, we formulate the 3D visual grounding problem as a sequence-to-sequence (Seq2Seq) task. As illustrated in the architecture above, the input sequence comprises 3D objects from the scene and an utterance describing a specific object. In contrast to existing architectures, our model predicts both the target object and a chain of anchors on the output side.</p>
+                            
+                           
+                            <!-- <ol>
                                 <li>
                                     <b>Holistic skills evaluation</b>. Rather than focus on isolated metrics such as accuracy, we measure 13 skills, which could be categorized into five critical skills; accuracy, robustness, generalization, fairness, and bias.
                                     <div class="text-center"><img src="./static/images/skills_metric.png" style="width: 700px;margin-bottom:50px;margin-top:10px;" /></div>
@@ -67,276 +74,11 @@
                                     We propose a unified benchmark, where we fairly evaluate the existing models across a wide range of metrics.
                                     <div class="text-center"><img src="./static/images/AC_metric.png" style="width: 800px;margin-bottom:50px;margin-top:10px;" /></div>
                                 </li>
-                            </ol>
+                            </ol> -->
                         </div>
                         <div class="col-sm-2"></div>
                         <div class="col-sm-2"></div>
-                        <div class="col-sm-3">
-                            <div class="list-header">9 Models</div>
-
-                            <div>
-                                <a class="list-item"> DALL.E V2 </a>
-                            </div>
-                            <div>
-                                <a class="list-item"> Stable-Diffusion V1 </a>
-                            </div>
-                            <div>
-                                <a class="list-item" > Structure-Difussion </a>
-                            </div>
-                            <div>
-                                <a class="list-item" > Stable-Diffusion V2 </a>
-                            </div>
-                            <div>
-                                <a class="list-item" > CogView V2 </a>
-                            </div>
-                            <div>
-                                <a  class="list-item"> Glide </a>
-                            </div>
-                            <div>
-                                <a class="list-item"> Paella </a>
-                            </div>
-                            <div>
-                                <a class="list-item" > minDALL-E </a>
-                            </div>
-                            <div>
-                                <a class="list-item" > DALLEMini </a>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <div class="list-header">50 Scenarios</div>
-                            <div>
-                                <a class="list-item"> Basic Scenarios
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a class="list-item" > Jobs/Custome </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Animals </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Transportation </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Food </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Currency </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Home Devices </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > People </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Cleaning tools </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Maintenance tools </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Cooking Items </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Furniture </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Home Accessories </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Building </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Nature </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Rooms </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Sports </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Clothes </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Personal tools </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Wild Life (Animals) </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Marine Life </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Ceremony </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Toys </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Facial Expressions </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Geometry Shapes </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Morals </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Facts </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Body Parts/Organs </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Anonymization </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Plants </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Hair Style </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Musical Instruments </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Fitness/Sports Equipment </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Sign </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Visual Text </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Medical Supplies </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Weapons and Military Equipments </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <a class="list-item"> Sequential Scenarios
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a class="list-item" > Autonomous Driving  </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Story Telling </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Gaming </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Gesture Language </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Movies </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <a class="list-item"> Creative Scenarios
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a class="list-item" > Logo/Brand  </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Billboard/Advs </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Fashoin/Clothes </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Product Design </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Art </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Interior Design </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Emotions </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Illustration/Teaching </a>
-                                    </li>
-                                    <li>
-                                        <a class="list-item" > Buety and Health </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="list-header">17 Metrics</div>
-                            <div>
-                                <a class="list-item">Accuracy</a>
-                                <ul>
-                                    <li><a class="list-item">FID</a></li>
-                                    <li><a class="list-item">IS</a></li>
-                                    <li><a class="list-item">Precision</a></li>
-                                    <li><a class="list-item">Recall</a></li>
-                                    <li><a class="list-item">F1</a></li>
-                                    <li><a class="list-item">NED</a></li>
-                                    <li><a class="list-item">CER</a></li>
-                                    <li><a class="list-item">WER</a></li>
-                                    <li><a class="list-item">CLIP-Score</a></li>
-                                    <li><a class="list-item">Classification Accuracy</a></li>
-                                    <li><a class="list-item">BLEU</a></li>
-                                    <li><a class="list-item">CIDEr</a></li>
-                                    <li><a class="list-item">TIT-Align</a></li>
-                                    <li><a class="list-item">I2I-Align</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <a class="list-item">Robustness</a>
-                                <ul>
-                                    <li><a class="list-item">CLIP-Score</a></li>
-                                    <li><a class="list-item">Spatial Accuracy</a></li>
-                                    <li><a class="list-item">Size Accuracy</a></li>
-                                    <li><a class="list-item">BLEU</a></li>
-                                    <li><a class="list-item">CIDEr</a></li>
-                                    <li><a class="list-item">TIT-Align</a></li>
-                                    <li><a class="list-item">I2I-Align</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <a class="list-item">Generalization</a>
-                                <ul>
-                                    <li><a class="list-item">CLIP-Score</a></li>
-                                    <li><a class="list-item">BLEU</a></li>
-                                    <li><a class="list-item">CIDEr</a></li>
-                                    <li><a class="list-item">TIT-Align</a></li>
-                                    <li><a class="list-item">I2I-Align</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <a class="list-item">Fairness</a>
-                                <ul>
-                                    <li><a class="list-item">CLIP-Score</a></li>
-                                    <li><a class="list-item">TIT-Align</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <a class="list-item">Bias</a>
-                                <ul>
-                                    <li><a class="list-item">Occurrence</a></li>
-                                    <li><a class="list-item">Co-Occurrence</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-1"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

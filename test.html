@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    caption {
+      font-size: small;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Benchmarking results while training jointly on Nr3D and Sr3D datasets <a href="#ref">(source)</a>.</caption>
+    <colgroup>
+      <col span="1" style="width: 20%;">
+      <col span="1" style="width: 8%;">
+      <col span="5" style="width: 9%;">
+      <col span="1" style="width: 8%;">
+      <col span="5" style="width: 9%;">
+    </colgroup>
+    <thead>
+      <tr>
+        <th rowspan="2">Method</th>
+        <th colspan="5">Nr3D</th>
+        <th></th>
+        <th colspan="5">Sr3D</th>
+      </tr>
+      <tr>
+        <th>Overall<span style="color:green;font-weight:bold;">(σ)</span></th>
+        <th>Easy</th>
+        <th>Hard</th>
+        <th>View-dep.</th>
+        <th>View-indep.</th>
+        <th></th>
+        <th>Overall<span style="color:green;font-weight:bold;">(σ)</span></th>
+        <th>Easy</th>
+        <th>Hard</th>
+        <th>View-dep.</th>
+        <th>View-indep.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ReferIt3D <a href="#ref">[1]</a></td>
+        <td>35.6</td>
+        <td>43.6</td>
+        <td>27.9</td>
+        <td>32.5</td>
+        <td>37.1</td>
+        <td></td>
+        <td>40.8</td>
+        <td>44.7</td>
+        <td>31.5</td>
+        <td>39.2</td>
+        <td>40.8</td>
+      </tr>
+      <!-- Add other rows here -->
+      <tr>
+        <td style="background-color:blue;color:white;">MVT+<i>papernameAbbrev</i> (<strong>Ours</strong>)</td>
+        <td><strong>57.0<span style="color:green;">±0.2</span></strong></td>
+        <td><strong>63.2</strong></td>
+        <td><strong>49.7</strong></td>
+        <td><strong>54.6</strong></td>
+        <td><strong>57.2</strong></td>
+        <td></td>
+        <td><strong>75.4<span style="color:green;">±0.5</span></strong></td>
+        <td><strong>79.6</strong></td>
+        <td><strong>65.3</strong></td>
+        <td><strong>64.9</strong></td>
+        <td><strong>75.9</strong></td>
+      </tr>
+    </tbody>
+  </table>
+  <p id="ref">[1] Reference details go here.</p>
+</body>
+</html>

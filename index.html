@@ -17,15 +17,17 @@
                 </button>
 
                 <!-- Here is the first image and the link it goes to -->
-                <!-- <a class="nav-link active" href="#"><img src="./static/images/hrs_logo.png" width="100" /></a> -->
+                <a class="nav-link active" href="#"><img src="./static/images/COT3DRef_logo.png" width="100" /></a>
                 <div class="collapse navbar-collapse" id="nav-content">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <!-- Here is the second image and the link it goes to -->
-                            <!-- <a class="nav-link active" href="#"><img src="./static/images/Bench_Logo.png" width="80" /></a> -->
+                            <!-- <a class="nav-link active" href="#"><img src="./static/images/COT3DRef_logo.png" width="80" /></a> -->
                         </li>
                         <!-- These are the items on the right -->
                         <li class="nav-item"><a class="nav-link active" href="quantitaive_results.html">Quantitaive Results</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="qualitative_results.html">Qualitative Results</a></li>
+
                     </ul>
                 </div>
 
@@ -38,7 +40,7 @@
                 <div class="col-sm-12" id="main">
                     <div class="row">
                         <div class="col-sm-12">
-                            <!-- <a href=""><img src="./static/images/Bench_Logo.png" class="mx-auto d-block" style="width: 500px;" /></a> -->
+                            <a href=""><img src="./static/images/COT3DRef_logo.png" class="mx-auto d-block" style="width: 500px;" /></a>
                         </div>
                         <div class="col-sm-12">
                             <div class="text-center">
@@ -57,8 +59,11 @@
                                 <div class="text-center"><img src="./static/images/CoT_arch-1.png" style="width: 700px;margin-bottom:50px;margin-top:10px;" /></div>
 
                                 <p>To achieve this objective, we formulate the 3D visual grounding problem as a sequence-to-sequence (Seq2Seq) task. As illustrated in the architecture above, the input sequence comprises 3D objects from the scene and an utterance describing a specific object. In contrast to existing architectures, our model predicts both the target object and a chain of anchors on the output side.</p>
-                            
-                           
+                            <h3>Data Data-Efficiency</h3>
+                            <!-- <h3 style= "background-color:rgb(237, 234, 240) ; width:100%; margin-top: 50px">Data-Efficiency:</h3> -->
+                            <!--Adding a picture of the results-->
+                            <div class="text-center"><img src="./static/images/data_eff_2x.png" style="width: 700px;margin-bottom:50px;margin-top:10px;" /></div>
+                            <p>We evaluate our framework's effectiveness in a challenging scenario with limited training data. We test our model on four different percentages of data: 10%, 40%, 70%, and 100%. The figure above demonstrates that on the Sr3D dataset, even with only 10% of the data, our model achieves performance comparable to MVT and SAT models trained on 100% of the data. This result highlights the remarkable data efficiency of our model.</p>
                             <!-- <ol>
                                 <li>
                                     <b>Holistic skills evaluation</b>. Rather than focus on isolated metrics such as accuracy, we measure 13 skills, which could be categorized into five critical skills; accuracy, robustness, generalization, fairness, and bias.

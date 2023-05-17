@@ -1,2 +1,2 @@
-# HRS-Bench
+# COT3DRef
 
